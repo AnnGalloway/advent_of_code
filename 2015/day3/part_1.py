@@ -5,18 +5,6 @@ present_locations = [[x_coord,y_coord]]
 testing = []
 testing_input = 'v>v<^'
 
-def move_east():
-    x_coord -= 1
-
-def move_west():
-    y_coord -= 1
-
-def move_north():
-    x_coord -= 1
-
-def move_south():
-    x_coord -= 1
-
 for c in input:
     if c == 'v':
         x_coord -= 1
