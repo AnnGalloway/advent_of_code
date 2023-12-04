@@ -39,6 +39,6 @@ for s in use_string:
 
 number_of_cards2 = len(use_string)
 
-print(use_string)
-print(number_of_cards)
+#print(use_string)
+#print(number_of_cards)
 print(number_of_cards2)
