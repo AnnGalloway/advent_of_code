@@ -6,9 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-import static java.lang.Math.abs;
-
-public class part1 {
+public class part2 {
     public static void main(String[] args) throws Exception {
 
         Scanner scanFile = new Scanner(new File("resources/inputDay1"));
@@ -31,15 +29,12 @@ public class part1 {
 
         int total = 0;
 
-        for (int i = 0; i < list1.size(); i++) {
-            int list1int = list1.get(i);
-            int list2int = list2.get(i);
+        for (int list1int : list1) {
+            int countList2 = Collections.frequency(list2, list1int);
+            total += list1int * countList2;
 
-            total += abs(list1int-list2int);
         }
         System.out.println(total);
-
-
 
     }
 }
